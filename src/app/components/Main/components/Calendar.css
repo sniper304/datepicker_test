@@ -1,0 +1,186 @@
+.Selectable
+  .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+  background-color: #f0f8ff !important;
+  color: #4a90e2;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+  position: relative;
+  background-color: #ffc65f;
+  color: #f0f8ff;
+}
+
+.Selectable
+  .DayPicker-Day--selected:not(.DayPicker-Day--start):not(.DayPicker-Day--end):not(.DayPicker-Day--outside) {
+  background-color: #ffc65f !important;
+  color: #f0f8ff;
+}
+
+.DayPicker:not(.DayPicker--interactionDisabled)
+  .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+  background-color: #ffc65f;
+}
+
+.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside):hover {
+  background-color: #ffc65f;
+}
+
+.Selectable .DayPicker-Day,
+.DayPicker-NavButton {
+  border-radius: 0 !important;
+  font-size: 0.875rem;
+  outline: none;
+}
+
+.Selectable .DayPicker-Day--start {
+  border-top-left-radius: 0.25rem !important;
+  border-bottom-left-radius: 0.25rem !important;
+}
+
+.Selectable .DayPicker-Day--end {
+  border-top-right-radius: 0.25rem !important;
+  border-bottom-right-radius: 0.25rem !important;
+}
+
+.DayPicker-NavBar {
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  top: 5px;
+  margin: 0 1em;
+}
+
+.DayPicker-NavButton {
+  position: relative;
+  width: 2em;
+}
+
+.DayPicker-wrapper {
+  outline: none;
+}
+
+.DayPicker-Caption {
+  text-align: center;
+}
+
+.DayPicker-NavButton--interactionDisabled {
+  display: block;
+  cursor: not-allowed;
+}
+
+.DayPicker-NavButton--next {
+  background-image: url('../../../img/ic_angle-right.svg');
+}
+
+.DayPicker-NavButton--prev {
+  background-image: url('../../../img/ic_angle-left.svg');
+}
+
+.col-xs-9 {
+  float: left;
+  width: 85%;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
+.col-xs-3 {
+  float: left;
+  width: 15%;
+  margin-left: 15px;
+}
+
+.container-fluid {
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 1000;
+  display: none;
+  float: left;
+  min-width: 10rem;
+  padding: 0.5rem 0;
+  margin: 0.125rem 0 0;
+  font-size: 1rem;
+  color: #373a3c;
+  text-align: left;
+  list-style: none;
+  background-color: #fff;
+  -webkit-background-clip: padding-box;
+  background-clip: padding-box;
+  border: 1px solid rgba(0, 0, 0, 0.15);
+  border-radius: 0.25rem;
+}
+
+.open > .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu-right {
+  right: 0;
+  left: auto;
+}
+
+.dialog-container {
+  position: relative;
+}
+
+.row {
+  display: flex;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  height: 80%;
+}
+
+.buttons-block {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 1em;
+}
+
+.nav-link, .btn {
+  border: 0;
+  padding: 5px;
+  text-align: left;
+  margin-bottom: 5px;
+  cursor: pointer;
+  outline: none;
+}
+
+.nav-link.active {
+  background: linear-gradient(to right, #f77d15, orange);
+  color: white;
+  border-radius: 3px;
+}
+
+.orange {
+  color: orange;
+}
+
+.icon {
+  max-width: 1em;
+}
+
+.dropdown-toggle span {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.dropdown-toggle span img.icon{
+  margin-right: 5px;
+}
+
+.dropdown-toggle span span{
+  margin-left: 5px;
+}
